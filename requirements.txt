@@ -1,0 +1,25 @@
+# Core app
+streamlit>=1.29.0
+pandas>=1.5.3
+numpy>=1.24.0
+plotly>=5.15.0
+
+# Database / ORM
+SQLAlchemy>=1.4.0
+
+# Crypto / hashing
+pycryptodome>=3.18.0
+
+# Machine learning
+scikit-learn>=1.2.0
+
+# Optional / useful
+matplotlib>=3.6.0     # for any extra plotting (not required by current code)
+paho-mqtt>=1.6.1      # for future real IoT device integration (MQTT client)
+psycopg2-binary>=2.9.6 # replace with your DB driver if using PostgreSQL in prod
+python-dotenv>=1.0.0  # load environment variables locally
+
+# Deployment helpers (optional)
+gunicorn>=20.1.0
+uvicorn>=0.22.0
+fastapi>=0.95.0       # if you move API logic out of Streamlit to a backend service
